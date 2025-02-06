@@ -1,0 +1,93 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.historyContainer {
+  padding: 24px;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+.historyContainer .historyHeading {
+  font-family: "Kanit", serif;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.filtersCard {
+  max-height: 100%;
+}
+
+.chartCard {
+  margin-bottom: 24px;
+}
+
+.transactionsHeading {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.transactionList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.transactionCard {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.transactionCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.incomeAmount {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.expenseAmount {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.noTransactions {
+  text-align: center;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.historyContainer .clearButton {
+  padding: 10px;
+  background-color: rgb(89, 64, 250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.historyContainer .clearButton:hover {
+  background-color: rgb(72, 50, 200);
+  transform: scale(1.05);
+}
+
+.errorMessage {
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .historyContainer {
+    padding: 16px;
+  }
+
+  .filtersCard {
+    margin-bottom: 24px;
+  }
+}

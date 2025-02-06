@@ -1,0 +1,135 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.newPasswordPage {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.newPasswordPage .newPasswordContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftSide {
+  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newPasswordPage .paragraphBox {
+  text-align: center;
+}
+
+.newPasswordPage .paragraphText {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.newPasswordPage .newPasswordFormBox {
+  width: 100%;
+  max-width: 400px;
+}
+
+.newPasswordPage .newPasswordFormBox h4 {
+  text-align: center;
+  color: #060606;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: "Kanit", serif;
+}
+
+.newPasswordPage .newPasswordButton {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(89, 64, 250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.newPasswordPage .newPasswordButton:hover {
+  background-color: rgb(72, 50, 200);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .newPasswordPage .newPasswordContainer {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .leftSide {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .rightSide {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .newPasswordPage .newPasswordFormBox {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .newPasswordPage .newPasswordFormBox h4 {
+    font-size: 1.5rem;
+    margin-bottom: 21px;
+  }
+
+  .newPasswordPage .newPasswordButton {
+    width: 100%;
+  }
+
+  .newPasswordPage .paragraphText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newPasswordPage .paragraphText {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .newPasswordPage .newPasswordFormBox h4 {
+    font-size: 1.4rem;
+  }
+
+  .newPasswordPage {
+    padding: 20px 10px;
+  }
+
+  .newPasswordPage .newPasswordFormBox {
+    padding: 0 10px;
+  }
+}

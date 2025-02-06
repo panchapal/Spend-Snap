@@ -1,168 +1,182 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+.container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #334155;
+}
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+.heroSection {
+  padding: 6rem 0;
+}
+
+.container .title {
+  font-size: 4.8rem ;
+  font-weight: 800 ;
+  margin-bottom: 1.5rem ;
+  color: #1e293b;
+  font-family: "Kanit",serif;
+}
+
+.container .highlight {
+  color: #3b82f6;
+  font-family: "Kanit", serif
+}
+
+.container .description {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem ;
+  line-height: 1.75 ;
+  color: #64748b;
+  margin-bottom: 2.5rem ;
+}
+
+.container .buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.container .button {
+  font-family: "Kanit", serif;
+  font-size: 1rem ;
+  font-weight: 600 ;
+  padding: 0.75rem 1.5rem ;
+  border-radius: 10px ;
+  transition: all 0.3s ease ;
+}
+
+.container .button:first-child {
+  background-color: #3b82f6 ;
+  color: #ffffff ;
+}
+
+.container .button:first-child:hover {
+  background-color: #2563eb ;
+}
+
+.container .button:last-child {
+  border-color: #3b82f6 ;
+  color: #3b82f6 ;
+}
+
+.container .button:last-child:hover {
+  background-color: rgba(59, 130, 246, 0.1) ;
+}
+
+.container .imageWrapper {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+.container .heroImage {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
 }
 
-.main {
+.container .features {
+  background-color: #f8fafc;
+  padding: 3rem 0;
+}
+
+.container .featureTitle {
+  font-family: "Kanit", serif;
+  font-size: 3rem ;
+  font-weight: 700 ;
+  margin-bottom: 4rem ;
+  color: #1e293b;
+  text-align: center;
+}
+
+.container .featureItem {
+  background-color: #f1f5f9;
+  padding: 2.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.container .featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.container .featureItem h3 {
+  font-family: "Raleway", serif;
+  text-align: center;
+  font-size: 1.3rem ;
+  color: #317cf4;
+  margin-bottom: 1rem ;
 }
 
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+@media (max-width: 768px) {
+  .container .title {
+    margin-top: 60px;
+    font-size: 3rem;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .container .description {
+    font-size: 1.1rem;
   }
 
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  .container .featureTitle {
+    font-size: 2.2rem;
+  }
+
+  .container .featureItem {
+    padding: 1.5rem;
+  }
+
+  .container .button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
+@media (max-width: 480px) {
+  .container .title {
     text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    font-size: 3.3rem;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .container .description {
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .container .featureTitle {
+    font-size: 2rem;
+  }
+
+  .container .featureItem h3 {
+    font-size: 1.1rem;
+  }
+
+  .container .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .button {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .heroSection {
+    padding: 2rem 0;
+  }
+
+  .container .features {
+    padding: 2rem 0.5rem;
   }
 }

@@ -1,0 +1,165 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.addTransactionPage {
+  background-color: #f0f4f8;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 50px;
+}
+
+
+.addTransactionPage .addTransactionContainer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.addTransactionPage .infoSection {
+  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.addTransactionPage .infoSection .infoBox {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.addTransactionPage .infoSection .infoBox h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Kanit", serif;
+}
+
+.addTransactionPage .infoSection .infoBox p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family:"Raleway", serif;
+}
+
+.addTransactionPage .addTransactionForm {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.addTransactionPage .formBox {
+  width: 80%;
+}
+
+.addTransactionPage .formBox h4 {
+  font-family: "Kanit", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: black;
+  text-align: center;
+}
+
+
+.addTransactionPage .addButton {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(89, 64, 250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.addTransactionPage .addButton:hover {
+  background-color: rgb(72, 50, 200);
+  transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .addTransactionContainer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .addTransactionPage .infoSection,
+  .addTransactionForm {
+    padding: 2rem;
+  }
+
+  .addTransactionPage .infoBox h4,
+  .addTransactionPage .formBox h4 {
+    font-size: 1.8rem;
+  }
+
+  .addTransactionPage .infoBox p {
+    font-size: 0.95rem;
+  }
+
+  .addTransactionPage .formBox {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .addTransactionPage {
+    padding: 1rem;
+  }
+
+  .addTransactionContainer {
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .addTransactionPage .infoSection {
+    padding: 1.5rem;
+  }
+
+  .addTransactionPage .infoSection .infoBox h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .addTransactionPage .infoSection .infoBox p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+ .addTransactionPage .addTransactionForm {
+    padding: 2rem;
+  }
+
+  .addTransactionPage .formBox {
+    width: 100%; 
+  }
+
+  .addTransactionPage .formBox h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .addTransactionPage .addButton {
+    padding: 1rem;
+    font-size: 1rem; 
+  }
+}

@@ -1,0 +1,140 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.monthlyContainer {
+  padding: 1rem;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.monthlyContainer .monthlyHeading {
+  font-family: "Kanit", serif;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.monthlyContainer .monthSelector{
+  margin-bottom: 2rem;
+}
+.monthlyContainer .summaryPaper {
+  padding: 1.5rem;
+  height: 100%;
+  background-color: #e8f5e9;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.monthlyContainer .summaryPaper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.monthlyContainer .summaryPaper1 {
+  padding: 1.5rem;
+  height: 100%;
+  background-color: #ffebee;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.monthlyContainer .summaryPaper1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.monthlyContainer .summaryPaper2 {
+  padding: 1.5rem;
+  height: 100%;
+  background-color: #e3f2fd;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.monthlyContainer .summaryPaper2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.summaryPaper .summaryItem {
+  display: flex;
+  align-items: center;
+}
+
+.summaryPaper .summaryItem .summaryIcon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.summaryPaper1 .summaryItem1 {
+  display: flex;
+  align-items: center;
+}
+
+.summaryPaper1 .summaryItem1 .summaryIcon1 {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.summaryPaper2 .summaryItem2 {
+  display: flex;
+  align-items: center;
+}
+
+.summaryPaper2 .summaryItem2 .summaryIcon2 {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+
+.summaryPaper .summaryItem .incomeText {
+  font-family: "Raleway", serif;
+  font-size: 1.6rem;
+  color: #4caf50;
+}
+
+.summaryPaper1 .summaryItem1 .expensesText {
+  font-family: "Raleway", serif;
+  font-size: 1.6rem;
+  color: #f44336;
+}
+
+.summaryPaper2 .summaryItem2 .savingsText {
+  font-family: "Raleway", serif;
+  font-size: 1.6rem;
+  color: #2196f3;
+}
+
+.chartsContainer .chartPaper .sectionHeading {
+  font-family: "Raleway", serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.chartsContainer .chartPaper {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.monthlyContainer .chartsContainer {
+  margin-top: 2rem;
+}
+
+.exportButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.monthlyContainer .exportButton {
+  padding: 12px;
+  background-color: rgb(89, 64, 250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.monthlyContainer .exportButton:hover {
+  background-color: rgb(72, 50, 200);
+  transform: scale(1.05);
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
