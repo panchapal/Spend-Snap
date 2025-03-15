@@ -4,7 +4,7 @@ Welcome to the Spend Snap Website! This application allows users to manage and t
 
 ### Weblink: [Live Website](https://spend-snap-sigma.vercel.app/)
 ## Some Images:
-<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/1.png"/>
+<img width="400px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/1.png"/>
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/2.png"/>
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/3.png"/>
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/4.png"/>
