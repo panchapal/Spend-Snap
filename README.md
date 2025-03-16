@@ -66,3 +66,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key`
 <br/>🔹 Filter & Search – Easily find transactions
 <br/>🔹 Set Budgets – Manage your spending goals
 <br/>🔹 Export Data – Download reports as CSV
+
+📜 Copyright Notice
+
+© 2025 [PANCHANAN PAL]. All rights reserved. This app and its contents are the intellectual property of [PANCHANAN PAL] and may not be copied, modified, or distributed without permission.
