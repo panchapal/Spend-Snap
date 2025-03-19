@@ -76,6 +76,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key`
 <br/>🔹 Set Budgets – Manage your spending goals
 <br/>🔹 Export Data – Download reports as CSV
 
+🎨 Designed with ❤️ by Panchanan Pal
+
 📜 Copyright Notice
 
 © 2025 [PANCHANAN PAL]. All rights reserved. This app and its contents are the intellectual property of [PANCHANAN PAL] and may not be copied, modified, or distributed without permission.
