@@ -14,6 +14,15 @@ Welcome to Spend Snap! This application helps users track, manage, and analyze t
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/8.png"/>
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/9.png"/>
 <img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/10.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/11.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/12.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/13.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/14.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/15.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/16.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/17.png"/>
+<img width="450px;" src="https://github.com/panchapal/Spend-Snap/blob/main/public/images/18.png"/>
+
 
 ## 📌 Table of Contents
 - 🔍 [Introduction](#introduction)
